@@ -1,0 +1,483 @@
+*
+{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+
+img
+{
+    border-radius: 5%;
+    border-radius: 30px;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-top: 8px;
+    vertical-align: middle;   
+}
+
+html
+{
+font-size: 16px;
+}
+
+#bloc_page
+{
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: white;
+    font-family:'Raleway', sans-serif;
+    color: #181818;
+}
+
+/* header */
+
+header
+{
+    display: flex; 
+    justify-content: space-between;
+
+}
+
+#logo 
+{
+    flex: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    display: flex;
+    margin-top: 50px;
+}
+
+nav li 
+{
+    margin-right: 50px;
+}
+
+nav a 
+{
+    color:black; 
+    text-decoration: none;
+    padding-top: 48px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    /*comment mettre que le herbergement reste bleu */
+}
+
+.menu_inscription
+{
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #0065FC;
+}
+
+/* section */
+
+#titre_2 h2
+{
+    padding-bottom: 8px;
+}
+
+/*bloc_recherche */
+
+#bloc_recherche 
+{
+    padding-top: 20px;
+    display: flex;
+
+}
+
+#filtre_icon_location
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
+
+}
+
+#filtre_recherche 
+{
+    display: flex;
+    position: relative;
+    left: -10px;
+
+}
+
+#marseille
+{
+    display: flex;
+    padding-left: 10px;
+ 
+}
+
+#marseille input
+{
+    padding-left: 10px;
+    font-weight: bold;
+    border: 1px solid #F2F2F2;
+
+}
+
+#bloc_recherche a /*le texte recherche */
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0065FC;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-left: 12px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    font-weight: bold;
+}
+
+
+/*bloc_filtre*/
+
+#banniere_filtres
+{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#titre_filtre, .filtre /*space entre filtre et titre */
+{
+    padding-right: 30px;
+}
+
+.filtre /* icon et text */
+{
+    display: flex;
+    justify-content: space-between;
+    color:black; 
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 90px;
+    border-color: #F2F2F2;
+    margin-right: 20px;
+}
+
+#banniere_filtres a /* design pour le text */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black; 
+    text-decoration: none;
+}
+
+/* symbole */
+
+
+.filtre_icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.filtre .filtre_icon /* icon et text */
+{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+.filtre a 
+{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 10px;
+    align-items: flex-end;
+}
+
+/* attention*/
+
+#attention
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.filtre_icon_1 /*filtre icon */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #F2F2F2;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+#titre_attention
+{
+    padding-left: 10px;
+}
+
+/* section */
+
+#section_1
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+#hebergement
+{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin-right: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    flex: 2;
+}
+
+#hebergement h1
+{
+    padding-bottom: 25px;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.titre
+{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    flex: 30%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+
+.titre_text 
+{
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+.titre_text p1
+{
+    font-weight: bold;
+}
+
+.euro
+{
+    display:flex
+}
+
+.nuit_etoile
+{
+    padding-top: 6px;
+}
+
+.etoile
+{
+    padding-top: 6px;
+}
+
+
+/*section_populaires */
+
+#populaires 
+{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 50px;
+}
+
+#populaires h1
+{
+    padding-bottom: 25px;
+}
+
+#titre_populaire
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_1
+{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.titre_1
+{
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 35px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        display:flex;
+        flex: 30%;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 1px 1px black;
+
+}
+
+
+.titre_text_pop
+{
+    font-weight: bold;
+
+}
+
+.text_titre_1
+{
+    padding-top: 15px;
+    display: column;
+    padding-left: 15px;
+}
+
+.etoile_2
+{
+    padding-top: 50px;
+}
+
+/*activité*/ 
+
+#activite
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#activite h1 
+{
+    padding-bottom: 20px;
+}
+
+#image_activite
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-weight: bold;
+}
+
+.filtre_image
+{
+    border-radius: 35px;
+    box-sizing: border-box;
+    flex: 20%;
+}
+
+.filtre_image img
+{
+    background-color: white;
+    padding: 5px;
+    padding-bottom: 60px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-radius:30px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    flex: 30%;
+}
+
+/* footer */ 
+
+
+
+#info_footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding-left: 50px;  
+    padding-right: 50px; 
+
+}
+
+.footer_design
+{
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer_design p
+{
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+footer ul
+{
+    list-style-type: none;
+    text-decoration: none;
+    color:black; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+footer ul li
+{
+    padding-bottom: 8px;
+
+}
+
+footer a
+{
+    color:black; 
+    text-decoration: none;
+}
