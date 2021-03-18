@@ -5,16 +5,6 @@ padding:0px;
 box-sizing: border-box;
 }
 
-img
-{
-    border-radius: 5%;
-    border-radius: 30px;
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-    margin-top: 8px;
-    vertical-align: middle;   
-}
 
 html
 {
@@ -116,8 +106,6 @@ nav a:hover
     border-radius: 25%;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
-
-
 }
 
 #filtre_recherche 
@@ -125,14 +113,12 @@ nav a:hover
     display: flex;
     position: relative;
     left: -10px;
-
 }
 
 #marseille
 {
     display: flex;
     padding-left: 10px;
- 
 }
 
 #marseille input
@@ -170,6 +156,7 @@ nav a:hover
     padding-top: 30px;
     padding-bottom: 20px;
     font-weight: bold;
+    Flex: wrap;
 }
 
 #titre_filtre, .filtre /*space entre filtre et titre */
@@ -235,6 +222,7 @@ nav a:hover
     display: flex;
     justify-content: left;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .filtre_icon_1 /*filtre icon */
@@ -256,65 +244,74 @@ nav a:hover
 
 /* section */
 
-#section_1
+.hotels /*section */
 {
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding-bottom: 20px;
+  display:flex; 
+  padding: 0px;
 }
 
-#hebergement
+.hotels, .populaire
+{ 
+    border-radius: 20px;
+}
+
+.hotels .container /*herbergement*/
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1px;
+}
+
+
+.hebergement
 {
     background-color: #F2F2F2;
     border-radius: 30px;
-    margin-right: 40px;
+    margin-right: 35px;
     padding: 50px;
-    box-sizing: border-box;
-    flex: 2;
 }
 
-#hebergement h1
+.hebergement h1
 {
     padding-bottom: 25px;
 }
 
-.container
+.hotel_card
 {
     display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
+    flex-direction: column;
+      height: 230px;
+      box-sizing: border-box;
+      border: 5px solid #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 7px #c1c1c1;
+      margin-right: 15px;
+      margin-left: 15px;
+      margin-bottom: 30px;
+      flex: 30%; /*100 divise par 3 */
+    }
 
-.titre
+.hotel_card img
 {
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 35px;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-    flex: 30%;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 1px 1px black;
+      width: 100%;
+      height: 145px;
+      object-fit: cover; /*couvre tout le conteneur, fit */
 }
 
 
-.titre_text 
+.hotel_description /*hotel et etoile */
 {
-    padding-left: 20px;
-    padding-top: 10px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 10px;
 }
 
-.titre_text p1
+.hotel_description p1
 {
     font-weight: bold;
-}
-
-.euro
-{
-    display:flex
 }
 
 .nuit_etoile
@@ -328,75 +325,88 @@ nav a:hover
 }
 
 
+
 /*section_populaires */
 
-#populaires 
+.populaires 
 {
     background-color: #F2F2F2;
     border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     padding: 50px;
 }
 
-#populaires h1
+.populaires h1
 {
     padding-bottom: 25px;
 }
 
-#titre_populaire
+.titre_populaire
 {
     display: flex;
     justify-content: space-between;
 }
 
-.container_1
+.populaireTab
 {
     display: flex;
     flex-wrap: wrap;
+}
+
+.populaireCard
+{
+    display: flex;
+    height: 145px;
+    width: 400px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #c1c1c1;
     box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
 }
 
-.titre_1
+.populaireCard img
 {
-        background-color: white;
-        border: 2px solid white;
-        border-radius: 35px;
-        padding-bottom: 20px;
-        margin-bottom: 40px;
-        display:flex;
-        flex: 30%;
-        box-sizing: border-box;
-        box-shadow: 1px 1px 1px 1px black;
-
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.titre_text_pop
+.populaireDescription
 {
-    font-weight: bold;
-
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 4px;
 }
 
-.text_titre_1
+.populaireDescription p
 {
-    padding-top: 15px;
-    display: column;
-    padding-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.populaireDescription p1
+{
+    padding-bottom: 15px;
 }
 
 .etoile_2
 {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 /*activité*/ 
 
 #activite
 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    border-radius: 30px;
+    margin-right: 35px;
+    padding: 50px;
 }
 
 #activite h1 
@@ -408,29 +418,38 @@ nav a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
     font-weight: bold;
+
 }
 
-.filtre_image
+.filtre_image /*comme card */
 {
-    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    width: 400px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #c1c1c1;
     box-sizing: border-box;
-    flex: 20%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.filtre_image p
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
 .filtre_image img
 {
-    background-color: white;
-    padding: 5px;
-    padding-bottom: 60px;
-    box-shadow: 1px 1px 1px 1px black;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-radius:30px;
-    margin-right:10px;
-    margin-bottom: 10px;
-    flex: 30%;
+    width: 100%;
+    height: 145px;
+    object-fit: cover; /*couvre tout le conteneur, fit */
 }
 
 /* footer */ 
@@ -480,4 +499,53 @@ footer a
 {
     color:black; 
     text-decoration: none;
+}
+
+
+/* media queries */
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 1024px) /*tablette*/
+{
+  .hotel_card{
+    flex: 40%;
+  }
+
+  .hotels{
+      flex-direction: column;
+  }
+  .populaireTab{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .populaireCard{
+      flex: 30%;
+      margin-right: 10px;
+  }
+
+  .hotels .marseille{
+      order: 3;
+  }
+
+}
+
+ 
+@media (max-width: 965px) /* breakpoints des que il ya un truc qui change mettre breakcpoint */
+
+{
+
+  .populaireCard{
+     flex: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .hotel_card {
+    flex: 100%;
+  }
+
+  .populaireCard{
+      flex: 100%;
+   }
 }

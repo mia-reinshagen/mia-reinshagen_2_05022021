@@ -83,7 +83,8 @@
 
   /* populaire */
 
-  .populaireTab{
+  .populaireTab
+  {
     display: flex;
     flex-wrap: wrap;
 
