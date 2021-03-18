@@ -269,11 +269,20 @@ nav a:hover
     border-radius: 30px;
     margin-right: 35px;
     padding: 50px;
+    padding-bottom: 30px;
+}
+
+.hebergement p
+{
+    padding: 15px;
 }
 
 .hebergement h1
 {
-    padding-bottom: 25px;
+
+    padding-bottom: 30px;
+    padding-left: 15px;
+
 }
 
 .hotel_card
@@ -543,6 +552,7 @@ nav a:hover
     box-sizing: border-box;
     overflow: hidden;
     background-color: white;
+    margin-right: 40px;
 
 }
 
