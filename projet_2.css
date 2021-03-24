@@ -249,19 +249,19 @@ nav a:hover
 
 /* section */
 
-.hotels /*section */
+#hotels /*section */
 {
   display:flex; 
   padding: 0px;
 
 }
 
-.hotels, .populaire
+#hotels, .populaire
 { 
     border-radius: 20px;
 }
 
-.hotels .container /*herbergement*/
+#hotels .container /*herbergement*/
 {
   display: flex;
   flex-wrap: wrap;
@@ -273,6 +273,22 @@ nav a:hover
 {
     margin-left:20px;
     margin-right:20px;
+}
+
+.hotel_description:hover
+{
+
+    color:lightcoral;
+}
+
+.hotel_card:hover
+{
+    border-color: #0065FC;
+}
+
+.hotel_card img:hover
+{
+    opacity: 70%;
 }
 
 .hebergement
@@ -317,25 +333,35 @@ nav a:hover
     
 }
 
+.hotel_card a
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
 .hotel_card img
 {
       width: 100%;
-      height: 150px;
+      height: 140px;
       object-fit: cover; /*couvre tout le conteneur, fit */
 }
 
 
 .hotel_description /*hotel et etoile */
 {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding-top: 10px;
     padding-left: 8px;
+    padding-bottom: 10px;
 }
 
 .hotel_description p1
 {
+    text-decoration: none;
     font-weight: bold;
 
 }
@@ -694,7 +720,7 @@ footer a
     flex: 40%;
   }
 
-  .hotels{
+  #hotels{
       flex-direction: column;
   }
   .populaireTab
@@ -709,7 +735,7 @@ footer a
       margin-right: 10px;
   }
 
-  .hotels .container
+  #hotels .container
   {
       order: 3;
   }
@@ -898,7 +924,7 @@ footer a
    }
 
 
-.hotels /*section */
+#hotels /*section */
 {
   display:flex; 
   padding: 0px;
