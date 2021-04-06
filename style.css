@@ -310,7 +310,11 @@ nav a:hover {
 
 .hotel_description p {
   text-decoration: none;
-  font-weight: bold;
+}
+
+.nuit_etoile p
+{
+  font-weight: light;
 }
 
 .nuit_etoile {
@@ -779,6 +783,7 @@ section#hotels {
     font-weight: bold;
     padding-left: 50px;
   }
+
   
   #info_footer {
     display: flex;
