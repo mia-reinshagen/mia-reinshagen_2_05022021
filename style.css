@@ -395,13 +395,7 @@ p strong {
   padding-top: 4px;
 }
 
-.populaireDescription p {
-  margin-left: 0px;
-  margin-top: 8px;
-  margin-bottom: 5px;
-}
-
-.populaireDescription p strong {
+.populaireDescription strong {
   margin-left: 0px;
   margin-top: 8px;
   margin-bottom: 5px;
