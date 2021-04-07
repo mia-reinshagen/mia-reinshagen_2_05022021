@@ -261,8 +261,9 @@ nav a:hover {
   padding-bottom: 30px;
 }
 
-#hebergement P strong {
-  padding: 20px;
+.hotel_description strong {
+  padding: 0px;
+  margin-left:0px;
 }
 
 #hebergement h1 {
